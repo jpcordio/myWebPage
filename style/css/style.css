@@ -1,0 +1,132 @@
+:root {
+  --color-cranberry: #E21A51;
+  --color-midnight: #143157;
+  --color-white: #FFFFFF;
+  --color-copperRose: #A16363;
+  --color-slateGray: #6C7E90;
+}
+
+span.navbar-brand.h1.mb-0.border.rounded {
+  padding: 3px;
+  border-width: 2px !important;
+  letter-spacing: 2px;
+}
+
+.imgBanner {
+  position: absolute;
+  background-image: url("../../imgs/banner.jpg");
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.sectionTitle {
+  font-weight: 400;
+}
+
+.vhfull {
+  min-height: 600px;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+h1.welcome {
+  font-size: 4rem;
+}
+
+p.welcome {
+  font-size: 2rem;
+}
+
+.mt-10 {
+  margin-top: 10rem !important;
+}
+
+.bw-3 {
+  border-width: 3px !important;
+}
+
+.imgProfile {
+  height: 300px;
+  width: 300px;
+  max-height: 300px;
+  max-height: 300px;
+  background-image: url("../../imgs/profilePicture.jpg");
+}
+
+.contentCircle {
+  min-height: 150px;
+  min-width: 150px;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.barWorkExperience {
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.jobDescription p {
+  color: var(--color-midnight) !important;
+  margin-bottom: 1px;
+}
+
+a#profileLink {
+  color: white !important;
+}
+
+a#profileLink:HOVER {
+  color: var(--color-cranberry) !important;
+}
+
+.map {
+  line-height: 0 !important;
+}
+
+.a-l {
+  border-color: transparent #f3f3f3;
+  border-style: solid;
+  border-width: 15px 15px 15px 0px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  margin-left: -30px;
+}
+
+.a-r {
+  border-color: transparent #f3f3f3;
+  border-style: solid;
+  border-width: 15px 0px 15px 15px;
+  height: 0px;
+  width: 0px;
+}
+
+.a-d {
+  border-color: #f3f3f3 transparent;
+  border-style: solid;
+  border-width: 15px 15px 0px 15px;
+  height: 0px;
+  width: 0px;
+}
+
+.a-u {
+  border-color: #f3f3f3 transparent;
+  border-style: solid;
+  border-width: 0px 15px 15px 15px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 200px;
+}
+
+.mapBorder {
+  height: 4px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, var(--color-white), var(--color-white) 20px, var(--color-copperRose) 20px, var(--color-copperRose) 40px, var(--color-white) 40px, var(--color-white) 60px, var(--color-slateGray) 60px, var(--color-slateGray) 80px);
+}
+
+/*# sourceMappingURL=style.css.map */
