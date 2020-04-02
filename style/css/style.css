@@ -129,4 +129,23 @@ a#profileLink:HOVER {
   background: repeating-linear-gradient(-45deg, var(--color-white), var(--color-white) 20px, var(--color-copperRose) 20px, var(--color-copperRose) 40px, var(--color-white) 40px, var(--color-white) 60px, var(--color-slateGray) 60px, var(--color-slateGray) 80px);
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+p.captcha-text.text-manatee {
+  margin-bottom: 0;
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+a.captcha-link {
+  color: var(--color-cranberry);
+  text-decoration: none;
+}
+
+a.captcha-link:HOVER {
+  color: #c01645;
+}
+
 /*# sourceMappingURL=style.css.map */

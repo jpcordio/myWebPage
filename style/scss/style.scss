@@ -146,3 +146,22 @@ a#profileLink:HOVER{
 		var(--color-slateGray) 80px	
 	);
 }
+
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+
+p.captcha-text.text-manatee {
+    margin-bottom: 0;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+a.captcha-link {
+    color: var(--color-cranberry);
+    text-decoration: none;
+}
+
+a.captcha-link:HOVER {
+    color: #c01645;
+}

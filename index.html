@@ -1239,21 +1239,24 @@
                                 
                                 <label for="yourMessage" class="sr-only">Textarea Your Message</label>
                                 <textarea id="message" name="message" class="form-control" placeholder="Your Message" required=""></textarea>
-
+                                <p class="captcha-text text-manatee">This site is protected by reCAPTCHA and the Google
+                                    <a class="captcha-link" href="https://policies.google.com/privacy">Privacy Policy</a> and
+                                    <a class="captcha-link" href="https://policies.google.com/terms">Terms of Service</a> apply.
+                                </p>
                             </div>
                             
                         </div>
                         
-                        <div class="form-row mt-3 mb-5">
+                        <div class="form-row mt-3 mb-4">
 
                             <div class="col-sm-12">
 
-                                <button type="submit" id="btnSend" class="btn btn-cranberry">Send</button>
+                                <button type="submit" id="btnSend" name="btnSend" class="btn btn-cranberry">Send</button>
 
                             </div>
                             
                         </div>
-                        
+                        <input type="hidden" id="token" name="token">  
                     </form>
                     
                 </div>
@@ -1355,6 +1358,42 @@
   </div>
 
 </div>
+  
+ <!-- <div class="modal fade" id="msgEmailFail" tabindex="-1" role="dialog">
+    
+  <div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title">Fail!</h5>
+
+            <button type="button" class="close" data-dismiss="modal">
+
+                <span>&times;</span>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p>Sorry, your email has failed, please try it again.</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+        </div>
+
+    </div>  
+
+  </div>
+
+</div>-->
 <!--SCRIPTS BEGIN -->
     
 <!-- Optional JavaScript --> 
@@ -1364,16 +1403,16 @@
     
 <script src="functions/js/jquery_v3_4_1.js"></script>
 
-<script src="node_modules/popper.js/dist/esm/popper.js"></script>
-
 <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="node_modules/popper.js/dist/esm/popper.js"></script>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     
 <script src="functions/js/scroll.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfa8OUUAAAAAG8S9Iu2IObYks_QOjZMKh_S5E3S"></script>    
     
 <script src="functions/js/processEmail.js"></script>
-
 <!--SCRIPTS END -->
  
 </body>
