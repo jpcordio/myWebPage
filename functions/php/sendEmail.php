@@ -2,13 +2,15 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-   
+#This Key is secret/personal for reCaptcha - I've generated it and called it on the include from secretKey.php
+$secretKey = include_once("secretKey.php");
+
     $name = $_POST['name'];    
     $email = $_POST['email'];    
     $message = $_POST['message'];         
     $url = "https://www.google.com/recaptcha/api/siteverify";        
     $data = [
-        'secret' => "6Lfa8OUUAAAAAEYJzcp-4OYS91czV-Qpd_pBjv9Q",
+        'secret' => $secretKey,
         'response' => $_POST['token'],
         'remoteip' => $_SERVER['REMOTE_ADDR']
     ]; 
@@ -34,9 +36,9 @@ error_reporting(E_ALL);
 
         mail($to, $subject, $message, $headers);
         
-        echo "SITE ALERT: Email Sent!";
+        echo "emailSent";
         
-   } else{ echo "SITE ALERT: reCaptcha Fail!"; }    
+   } else{ echo "emailFail"; }    
 
 
 ?>
